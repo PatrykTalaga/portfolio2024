@@ -8,6 +8,7 @@ import CV from "./Pages/CV.tsx";
 import SmallerProjects from "./Pages/SmallerProjects.tsx";
 import Gallery from "./Pages/Gallery.tsx";
 import ErrorPage404 from "./Pages/ErrorPage404.tsx";
+import Contact from "./Pages/Contact.tsx";
 
 /* const router = createBrowserRouter([]); */
 /* const router = createBrowserRouter([{ path: "/", element: <HomePage /> }]); */
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   { path: "/CV", element: <CV /> },
   { path: "/SmallerProjects", element: <SmallerProjects /> },
   { path: "/Gallery", element: <Gallery /> },
+  { path: "/Contact", element: <Contact /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./HomePage.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function HomePage() {
   useEffect(() => {
@@ -37,7 +37,9 @@ function HomePage() {
           <Link className="homepage-link" to={"/Gallery"}>
             Galeria
           </Link>
-          <p className="homepage-link">Kontakt</p>
+          <Link className="homepage-link" to={"/Contact"}>
+            Kontakt
+          </Link>
         </div>
         <div id="background-pattern"></div>
       </div>
