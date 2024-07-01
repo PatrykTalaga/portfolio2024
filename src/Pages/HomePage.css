@@ -1,0 +1,72 @@
+#main-menu {
+  height: 100vh;
+  display: flex;
+  align-items: start;
+}
+
+#main-menu-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-menu-links {
+  margin: 10rem 0 0 15rem;
+  z-index: 2;
+}
+
+#main-menu-links .homepage-link {
+  font-size: 3rem;
+  margin: 0.25rem 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#main-menu-links:hover .homepage-link {
+  /* fade away all link class elements */
+  opacity: 40%;
+}
+
+#main-menu-links > .homepage-link:hover {
+  /* overwrite for current link only */
+
+  opacity: 100%;
+}
+
+#background-pattern {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle,
+    rgba(225, 225, 225, 0.1) 10%,
+    transparent 10%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin; /* vieport minimum -> will always be 12%
+                                     of the viewport's shorter dimension */
+  transition: opacity 0.5s, background-position 1s ease-in-out;
+}
+
+#main-menu-links:hover ~ #background-pattern {
+  opacity: 50%;
+}
+
+/* Scroll Pattern */
+#main-menu[data-active-index="0"] > #background-pattern {
+  background-position: 0% -25%;
+}
+#main-menu[data-active-index="1"] > #background-pattern {
+  background-position: 0% -50%;
+}
+#main-menu[data-active-index="2"] > #background-pattern {
+  background-position: 0% -75%;
+}
+#main-menu[data-active-index="3"] > #background-pattern {
+  background-position: 0% -100%;
+}
+#main-menu[data-active-index="4"] > #background-pattern {
+  background-position: 0% -125%;
+}

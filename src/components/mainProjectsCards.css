@@ -1,0 +1,36 @@
+.main-projects .cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+  margin-top: 12rem;
+}
+
+.main-projects .cards-container .card {
+  background-color: hsla(211, 64%, 9%, 0.24);
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.main-projects .cards-container .card .video-containter {
+  width: 90%;
+  aspect-ratio: 16 / 9;
+}
+
+.main-projects .cards-container .card p {
+  font-size: 1.5rem;
+}
+
+.main-projects .cards-container .card h1 {
+  font-size: 2.5rem;
+}
+
+.main-projects .cards-container .card a {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
