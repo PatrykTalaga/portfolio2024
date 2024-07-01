@@ -1,0 +1,112 @@
+.pokeApi-container {
+  display: block;
+}
+.pokeApi-container p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.pokeApi-container .main-background {
+  background-color: red;
+  background-image: url("../assets/patternHex.svg");
+  background-blend-mode: darken;
+}
+.pokeApi-container .left-side-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  border-radius: 2rem 2rem 0 0;
+  align-items: center;
+  font-size: 2rem;
+}
+.left-side-container p {
+  font-size: 2rem;
+}
+.pokeApi-container .left-side-container .error-message {
+  text-align: center;
+  border: 2px solid black;
+  font-size: 500;
+  text-shadow: 1px 1px 1px hsl(0, 0%, 25%);
+  background-image: url("../assets/paternDots.svg");
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.pokeApi-container .left-side-container .error-message p {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.pokeApi-container .right-side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  border: 4px solid black;
+  border-top: 0px transparent;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.pokeApi-container .left-side-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  padding-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-image: url("../assets/paternDots.svg");
+}
+
+.pokeApi-container img {
+  max-height: 175px;
+  object-fit: contain;
+}
+
+.pokeApi-container .right-side-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background-color: hsl(0, 100%, 50%);
+  border-radius: 1rem;
+}
+.pokeApi-container .right-side-content p {
+  font-weight: 500;
+}
+.pokeApi-container .right-side-content .search-container {
+  display: inline-block;
+}
+.pokeApi-container .right-side-content input {
+  background-color: rgb(233, 233, 233);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px hsl(0, 0%, 33%);
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 175px;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  border: transparent;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px rgb(184, 12, 0);
+}
+.pokeApi-container .right-side-content button {
+  background-color: rgb(255, 51, 0);
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 1px hsl(0, 0%, 33%);
+  padding: 0.5rem 0.5rem;
+  border: 2px solid rgb(255, 51, 0);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px rgb(184, 12, 0);
+}
+
+@media screen and (min-width: 680px) {
+  .pokeApi-container .left-side-container {
+    padding: 2.5rem 2rem;
+  }
+  .pokeApi-container img {
+    max-height: 250px;
+    object-fit: contain;
+  }
+}

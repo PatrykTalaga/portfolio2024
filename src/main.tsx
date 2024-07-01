@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainProjects from "./Pages/MainProjects.tsx";
 import CV from "./Pages/CV.tsx";
-import SmallerProjects from "./Pages/SmallerProjects copy.tsx";
+import SmallerProjects from "./Pages/SmallerProjects.tsx";
 import Gallery from "./Pages/Gallery.tsx";
 import ErrorPage404 from "./Pages/ErrorPage404.tsx";
 

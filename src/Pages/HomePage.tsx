@@ -7,8 +7,9 @@ function HomePage() {
     /* Creating activeIndex atribute to store current background-pattern position.
     So it is not reseted at every onmouseover/onmouseleave */
     const menu = document.getElementById("main-menu");
+    /* console.log(menu); */
     Array.from(
-      document.getElementsByClassName("link") as HTMLCollectionOf<
+      document.getElementsByClassName("homepage-link") as HTMLCollectionOf<
         HTMLParagraphElement | HTMLAnchorElement
       >
     ).forEach((item, index) => {

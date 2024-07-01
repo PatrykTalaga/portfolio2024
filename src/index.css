@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  /*  overflow-x: hidden; */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,4 +32,21 @@ a {
 a:visited {
   color: rgb(245, 245, 245);
   text-decoration: none;
+}
+
+/* style for scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: hsla(0, 0%, 0%, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 46, 189);
+  outline: 2px solid hsla(0, 0%, 0%, 0.678);
+  outline-offset: -2px;
+  border: 0.1px solid hsla(0, 0%, 0%, 0.616);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(273, 76%, 55%);
 }
